@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab Setup | Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Virtual Lab Setup</h1>
+        <p>Build a Safe Environment for Cybersecurity Practice</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#virtualization">Virtualization</a>
+            <a href="#setup">Setup Guide</a>
+            <a href="#safety">Safety</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Learn Cybersecurity Safely</h2>
+        <p>
+            Explore Kali Linux and virtualization to create a controlled
+            environment for learning ethical hacking.
+        </p>
+        <a class="hero-btn" href="#about">Start Learning</a>
+    </section>
+
+    <section id="about">
+        <h2>What is a Virtual Lab?</h2>
+        <p>
+            A Virtual Lab is a computer environment created using
+            virtualization software. It allows learners to practise
+            cybersecurity concepts without directly changing their
+            main operating system.
+        </p>
+    </section>
+
+    <section id="virtualization">
+        <h2>Understanding Virtualization</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Virtualization</h3>
+                <p>
+                    Virtualization allows one physical computer to run
+                    multiple virtual computers.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Virtual Machine</h3>
+                <p>
+                    A Virtual Machine (VM) is a software-based computer
+                    that runs its own operating system.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Kali Linux</h3>
+                <p>
+                    Kali Linux is a Linux distribution used for
+                    cybersecurity testing, security research and
+                    ethical hacking.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>VirtualBox</h3>
+                <p>
+                    Oracle VirtualBox is virtualization software
+                    that helps create and run virtual machines.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="setup">
+        <h2>Kali Linux Virtual Lab Setup</h2>
+
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Check System Requirements</h3>
+                <p>
+                    Check your computer's RAM, processor and available
+                    storage before creating a virtual machine.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Install VirtualBox</h3>
+                <p>
+                    Download VirtualBox from its official website
+                    and install it on your computer.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Download Kali Linux</h3>
+                <p>
+                    Download the official Kali Linux installer image
+                    from the Kali Linux website.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 4: Create a Virtual Machine</h3>
+                <p>
+                    Open VirtualBox, create a new virtual machine
+                    and select Linux as the operating system type.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 5: Configure the VM</h3>
+                <p>
+                    Allocate suitable RAM, processor resources and
+                    virtual disk space according to your computer.
+                </p>
+            </div>
+
+            <div class="step">
+                <h3>Step 6: Install Kali Linux</h3>
+                <p>
+                    Attach the Kali Linux installer image to the VM
+                    and follow the installation instructions.
+                </p>
+            </div>
+        </div>
+
+        <p class="note">
+            Note: These are educational setup steps. Follow the
+            official installation guide for the detailed process.
+        </p>
+
+        <div class="resource-links">
+            <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">
+                Download VirtualBox
+            </a>
+
+            <a href="https://www.kali.org/get-kali/" target="_blank" rel="noopener">
+                Download Kali Linux
+            </a>
+
+            <a href="https://www.kali.org/docs/virtualization/" target="_blank" rel="noopener">
+                Official Kali Virtualization Guide
+            </a>
+        </div>
+    </section>
+
+    <section id="safety">
+        <h2>Importance of a Controlled Environment</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Isolation</h3>
+                <p>
+                    A virtual machine helps separate cybersecurity
+                    practice from your main operating system.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Snapshots</h3>
+                <p>
+                    Snapshots allow you to save a VM state and
+                    return to it when needed.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Safe Testing</h3>
+                <p>
+                    Practise only on systems you own or have
+                    explicit permission to test.
+                </p>
+            </div>
+        </div>
+
+        <h3>Safety Rules</h3>
+        <ul>
+            <li>Use a separate virtual environment for practice.</li>
+            <li>Take snapshots before making major changes.</li>
+            <li>Use trusted software downloads.</li>
+            <li>Do not test systems without permission.</li>
+            <li>Use isolated networking for intentionally vulnerable labs.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Virtual Lab Knowledge Quiz</h2>
+
+        <p id="progress"></p>
+        <h3 id="question"></h3>
+
+        <div id="answers"></div>
+
+        <p id="result"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()" hidden>
+            Next Question
+        </button>
+
+        <button id="restartBtn" onclick="restartQuiz()" hidden>
+            Restart Quiz
+        </button>
+    </section>
+
+    <section class="video">
+        <h2>Video Learning Resource</h2>
+        <p>Watch this tutorial to understand the Virtual Lab setup.</p>
+
+        <a href="https://www.youtube.com/watch?v=fAwJgwIuFHI" target="_blank" rel="noopener">
+            Watch YouTube Tutorial
+        </a>
+    </section>
+
+    <footer>
+        <p>Virtual Lab Setup | Cybersecurity Learning Project</p>
+        <p>Learn Responsibly. Practise Safely.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
