@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cybersecurity Fundamentals</h1>
+        <p>Learn the basics of Cybersecurity and Ethical Hacking</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#hackers">Types of Hackers</a>
+        <a href="#cia">CIA Triad</a>
+        <a href="#threats">Cyber Threats</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section id="intro">
+            <h2>Introduction to Cybersecurity</h2>
+            <p>
+                Cybersecurity is the practice of protecting computers,
+                networks, applications and data from cyber attacks.
+            </p>
+            <p>
+                Ethical hacking helps identify security weaknesses
+                with proper permission.
+            </p>
+        </section>
+
+        <section id="hackers">
+            <h2>Types of Hackers</h2>
+
+            <div class="card">
+                <h3>White Hat Hacker</h3>
+                <p>Ethical hackers who find security weaknesses legally and help protect systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Black Hat Hacker</h3>
+                <p>Hackers who access systems illegally and use their skills for harmful purposes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Grey Hat Hacker</h3>
+                <p>Hackers who may find vulnerabilities without permission but do not always have harmful intentions.
+                </p>
+            </div>
+        </section>
+
+        <section id="cia">
+            <h2>CIA Triad</h2>
+            <p>The CIA Triad is the foundation of information security.</p>
+
+            <div class="card">
+                <h3>Confidentiality</h3>
+                <p>Ensures that information is accessible only to authorized people.</p>
+            </div>
+
+            <div class="card">
+                <h3>Integrity</h3>
+                <p>Ensures that data remains accurate and is not changed without authorization.</p>
+            </div>
+
+            <div class="card">
+                <h3>Availability</h3>
+                <p>Ensures that systems and information are available when needed.</p>
+            </div>
+        </section>
+
+        <section id="threats">
+            <h2>Common Cybersecurity Threats</h2>
+
+            <div class="card">
+                <h3>Malware</h3>
+                <p>Malicious software designed to damage or access computer systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Phishing</h3>
+                <p>A technique used to trick people into sharing passwords or personal information through fake messages
+                    or websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ransomware</h3>
+                <p>A type of malware that locks or encrypts files and demands money to restore access.</p>
+            </div>
+        </section>
+
+        <!-- CYBERSECURITY QUIZ -->
+
+        <section id="quiz">
+            <h2>Cybersecurity Knowledge Quiz</h2>
+
+            <p id="progress"></p>
+
+            <p id="question"></p>
+
+            <div id="answers"></div>
+
+            <p id="result"></p>
+
+            <button id="nextBtn" onclick="nextQuestion()" style="display:none;">
+                Next Question
+            </button>
+
+            <button id="restartBtn" onclick="restartQuiz()" style="display:none;">
+                Restart Quiz
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Cybersecurity Fundamentals | Learning Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

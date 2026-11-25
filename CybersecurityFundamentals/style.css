@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+nav {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #0369a1;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #e0f2fe;
+    padding: 18px;
+    margin: 12px 0;
+    border-left: 5px solid #0284c7;
+    border-radius: 6px;
+}
+
+.card h3 {
+    color: #075985;
+}
+
+#question {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-btn {
+    background-color: #e0f2fe;
+    color: #0f172a;
+    border: 1px solid #0284c7;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background-color: #bae6fd;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.correct {
+    background-color: #bbf7d0;
+    border-color: #16a34a;
+}
+
+.wrong {
+    background-color: #fecaca;
+    border-color: #dc2626;
+}
+
+button {
+    background-color: #0369a1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #075985;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
