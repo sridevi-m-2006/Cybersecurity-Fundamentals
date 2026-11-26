@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking & Reconnaissance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Networking & Reconnaissance</h1>
+    <p>Learn Networking Basics and Ethical Reconnaissance</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#networking">Networking</a>
+        <a href="#commands">Commands</a>
+        <a href="#recon">Reconnaissance</a>
+        <a href="#safety">Safety</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Explore the World of Networking</h2>
+    <p>
+        Understand IP addresses, DNS, ports and protocols.
+        Learn basic commands used to gather network information
+        in an authorized environment.
+    </p>
+    <a href="#about" class="hero-btn">Start Learning</a>
+</section>
+
+<section id="about">
+    <h2>What is Networking?</h2>
+    <p>
+        Computer networking is the connection of two or more
+        devices to share information and resources. Networks
+        allow computers to communicate using protocols,
+        IP addresses and ports.
+    </p>
+</section>
+
+<section id="networking">
+    <h2>Fundamental Networking Concepts</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>IP Address</h3>
+            <p>
+                An IP address is a unique network address used
+                to identify a device and communicate over a network.
+            </p>
+            <p><strong>Example:</strong> 192.168.1.10</p>
+        </div>
+
+        <div class="card">
+            <h3>DNS</h3>
+            <p>
+                Domain Name System (DNS) translates domain names
+                into IP addresses so computers can locate servers.
+            </p>
+            <p><strong>Example:</strong> example.com</p>
+        </div>
+
+        <div class="card">
+            <h3>Ports</h3>
+            <p>
+                Ports are logical communication endpoints used
+                by applications and network services.
+            </p>
+            <p><strong>Example:</strong> Port 443</p>
+        </div>
+
+        <div class="card">
+            <h3>Protocols</h3>
+            <p>
+                Protocols are rules that allow devices to
+                communicate and exchange information.
+            </p>
+            <p><strong>Example:</strong> TCP, UDP, HTTP</p>
+        </div>
+    </div>
+</section>
+
+<section id="ports">
+    <h2>Common Network Ports and Protocols</h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Port</th>
+                <th>Protocol</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>20 / 21</td>
+                <td>FTP</td>
+                <td>File transfer</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>SSH</td>
+                <td>Secure remote access</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>SMTP</td>
+                <td>Sending email</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>DNS</td>
+                <td>Domain name resolution</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>HTTP</td>
+                <td>Web communication</td>
+            </tr>
+            <tr>
+                <td>443</td>
+                <td>HTTPS</td>
+                <td>Secure web communication</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="commands">
+    <h2>Basic Networking Commands</h2>
+    <p>
+        These commands help you understand network configuration
+        and connectivity. Run them on your own computer.
+    </p>
+
+    <div class="command-card">
+        <h3>1. ipconfig</h3>
+        <p>Displays network configuration on Windows.</p>
+        <code>ipconfig</code>
+    </div>
+
+    <div class="command-card">
+        <h3>2. ping</h3>
+        <p>Checks basic connectivity to a destination.</p>
+        <code>ping -n 4 example.com</code>
+    </div>
+
+    <div class="command-card">
+        <h3>3. nslookup</h3>
+        <p>Finds DNS information for a domain name.</p>
+        <code>nslookup example.com</code>
+    </div>
+
+    <div class="command-card">
+        <h3>4. tracert</h3>
+        <p>Shows the network route taken by packets on Windows.</p>
+        <code>tracert example.com</code>
+    </div>
+
+    <div class="command-card">
+        <h3>5. whois</h3>
+        <p>
+            Looks up publicly available domain registration
+            information. Availability depends on your system
+            and the WHOIS service used.
+        </p>
+        <code>whois example.com</code>
+    </div>
+
+    <div class="command-card">
+        <h3>6. ipconfig /all</h3>
+        <p>Displays detailed network adapter information.</p>
+        <code>ipconfig /all</code>
+    </div>
+
+    <p class="note">
+        Note: These are example commands. Some commands may need
+        additional tools. Use them only for learning and
+        authorized network checks.
+    </p>
+</section>
+
+<section id="recon">
+    <h2>What is Reconnaissance?</h2>
+
+    <p>
+        Reconnaissance is the information-gathering stage of
+        cybersecurity assessment. It helps security professionals
+        understand a target before an authorized security test.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Passive Reconnaissance</h3>
+            <p>
+                Collecting publicly available information without
+                directly interacting with the target system.
+            </p>
+            <p><strong>Example:</strong> Public DNS records and
+            published website information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Reconnaissance</h3>
+            <p>
+                Interacting directly with a system to collect
+                technical information. It requires permission.
+            </p>
+            <p><strong>Example:</strong> An approved network
+            connectivity or service check.</p>
+        </div>
+    </div>
+
+    <h3 class="subheading">Basic Reconnaissance Workflow</h3>
+
+    <div class="workflow">
+        <div>Identify an authorized domain</div>
+        <span>↓</span>
+        <div>Gather public information</div>
+        <span>↓</span>
+        <div>Understand DNS and network details</div>
+        <span>↓</span>
+        <div>Document findings</div>
+    </div>
+</section>
+
+<section id="safety">
+    <h2>Safety and Ethical Guidelines</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Get Permission</h3>
+            <p>
+                Test only systems that you own or have explicit
+                permission to assess.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Respect Privacy</h3>
+            <p>
+                Use publicly available information responsibly.
+                Do not collect private information without permission.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Document Findings</h3>
+            <p>
+                Record your observations clearly and report
+                security concerns responsibly.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="quiz">
+    <h2>Networking Knowledge Quiz</h2>
+
+    <p id="progress"></p>
+    <h3 id="question"></h3>
+
+    <div id="answers"></div>
+
+    <p id="result"></p>
+
+    <button id="nextBtn" onclick="nextQuestion()" hidden>
+        Next Question
+    </button>
+
+    <button id="restartBtn" onclick="restartQuiz()" hidden>
+        Restart Quiz
+    </button>
+</section>
+
+<section class="video">
+    <h2>Video Learning Resource</h2>
+    <p>Watch the tutorial to learn more about networking and reconnaissance.</p>
+
+    <a href="https://www.youtube.com/watch?v=nAZ4HmFbKT8"
+       target="_blank" rel="noopener">
+        Watch YouTube Tutorial
+    </a>
+</section>
+
+<footer>
+    <p>Networking & Reconnaissance | Cybersecurity Learning Project</p>
+    <p>Learn Responsibly. Practise Ethically.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
