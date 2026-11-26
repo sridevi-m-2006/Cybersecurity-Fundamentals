@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Investigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>OSINT Investigation</h1>
+        <p>Explore digital footprints using Open Source Intelligence</p>
+    </header>
+
+    <nav>
+        <a href="#about">About OSINT</a>
+        <a href="#sources">Information Sources</a>
+        <a href="#investigation">Investigation</a>
+        <a href="#report">Report</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <section id="about">
+        <h2>What is OSINT?</h2>
+        <p>
+            OSINT stands for Open Source Intelligence.
+            It is the process of collecting and analyzing
+            information from publicly available sources.
+        </p>
+
+        <p>
+            Security professionals use OSINT to understand
+            digital footprints, identify potential threats,
+            and support cybersecurity investigations.
+        </p>
+    </section>
+
+    <section id="sources">
+        <h2>1. Public Information Sources</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Search Engines</h3>
+                <p>Find publicly available webpages and information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Study publicly visible posts and profiles responsibly.</p>
+            </div>
+
+            <div class="card">
+                <h3>Domain Information</h3>
+                <p>Explore public domain registration and DNS information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Public Websites</h3>
+                <p>Collect information published openly by organizations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="investigation">
+        <h2>2. Digital Footprint Investigation</h2>
+
+        <p>
+            A digital footprint is the information a person
+            or organization leaves behind while using the internet.
+        </p>
+
+        <div class="info">
+            <h3>Fictional Investigation Target</h3>
+            <p>Target Name: Example Training Organization</p>
+            <p>Website: example.org</p>
+            <p>Investigation Type: Educational demonstration</p>
+            <p>Data Source: Public documentation</p>
+        </div>
+
+        <h3>Investigation Categories</h3>
+
+        <label for="category">Choose a category:</label>
+
+        <select id="category">
+            <option value="website">Website Information</option>
+            <option value="domain">Domain Information</option>
+            <option value="social">Public Social Media</option>
+            <option value="security">Security Information</option>
+        </select>
+
+        <button onclick="investigate()">Analyze Sample Data</button>
+
+        <div id="investigationResult" class="result">
+            Investigation results will appear here.
+        </div>
+    </section>
+
+    <section id="report">
+        <h2>3. Investigation Report</h2>
+
+        <p>
+            A professional OSINT investigation should document
+            the information collected, its source, and its reliability.
+        </p>
+
+        <div class="report">
+            <h3>Sample Investigation Findings</h3>
+
+            <p><strong>Target:</strong> Example Training Organization</p>
+
+            <p><strong>Finding 1:</strong>
+                A public website is available.</p>
+
+            <p><strong>Finding 2:</strong>
+                Public domain documentation can provide technical details.</p>
+
+            <p><strong>Finding 3:</strong>
+                Information should be verified using reliable sources.</p>
+
+            <p><strong>Risk Level:</strong> Educational sample only</p>
+
+            <p><strong>Conclusion:</strong>
+                OSINT helps understand publicly visible digital information.</p>
+        </div>
+
+        <button onclick="downloadReport()">Download Investigation Report</button>
+    </section>
+
+    <section id="safety">
+        <h2>4. Ethical Guidelines</h2>
+
+        <ul>
+            <li>Use only publicly available information.</li>
+            <li>Respect privacy and applicable laws.</li>
+            <li>Do not access private accounts.</li>
+            <li>Do not bypass authentication.</li>
+            <li>Verify information before reporting.</li>
+            <li>Protect collected evidence.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>OSINT Knowledge Quiz</h2>
+
+        <p id="progress"></p>
+        <p id="question"></p>
+
+        <div id="options"></div>
+
+        <p id="result"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()">Next Question</button>
+
+        <button id="restartBtn" onclick="restartQuiz()" style="display:none;">
+            Restart Quiz
+        </button>
+    </section>
+
+    <footer>
+        <p>OSINT Investigation | Cybersecurity Learning Project</p>
+        <p>Collect responsibly. Analyze carefully. Respect privacy.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
