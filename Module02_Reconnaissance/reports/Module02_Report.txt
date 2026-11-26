@@ -1,0 +1,32 @@
+MODULE 02: LINUX, SECURITY TOOLS & RECONNAISSANCE
+
+1. OBJECTIVE
+To understand Linux commands and perform basic cybersecurity
+reconnaissance using security tools.
+
+2. LINUX FUNDAMENTALS
+Practised basic Linux commands, file management,
+permissions and process management.
+
+3. BURP SUITE
+Captured HTTP requests and responses using Burp Suite.
+Tested with example.com.
+
+4. OWASP ZAP
+Opened the ZAP HUD and accessed example.com.
+Observed HTTP traffic and security alerts.
+
+5. OBSERVATIONS
+ZAP displayed informational, low and medium risk alerts.
+These alerts require investigation and do not automatically
+indicate a confirmed vulnerability.
+
+6. CONCLUSION
+Learned basic Linux operations, HTTP traffic analysis
+and website security assessment using Burp Suite
+and OWASP ZAP.
+
+
+
+
+Wireshark captured 10 packets using TShark. Observed NTP and ARP traffic.
