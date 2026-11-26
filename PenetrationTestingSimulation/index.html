@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penetration Testing Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Penetration Testing Simulation</h1>
+        <p>Learn how ethical hackers identify and understand system weaknesses.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#lab">Lab Setup</a>
+        <a href="#recon">Reconnaissance</a>
+        <a href="#scan">Vulnerability Scan</a>
+        <a href="#exploit">Exploitation</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <section id="about">
+        <h2>What is Penetration Testing?</h2>
+        <p>
+            Penetration testing is an authorized security assessment
+            used to identify weaknesses in computer systems,
+            applications, and networks.
+        </p>
+        <p>
+            Ethical hackers perform controlled tests to help
+            organizations improve their security.
+        </p>
+    </section>
+
+    <section id="lab">
+        <h2>1. Setting Up a Safe Lab</h2>
+        <p>A virtual lab provides a controlled environment for security practice.</p>
+        <ul>
+            <li>Install VirtualBox or another virtualization tool.</li>
+            <li>Prepare a dedicated virtual machine.</li>
+            <li>Use an intentionally vulnerable training machine.</li>
+            <li>Keep the lab isolated from public networks.</li>
+            <li>Take a snapshot before testing.</li>
+        </ul>
+    </section>
+
+    <section id="recon">
+        <h2>2. Reconnaissance</h2>
+        <p>
+            Reconnaissance is the process of collecting information
+            about a target before security testing.
+        </p>
+
+        <div class="info">
+            <h3>Information collected in our sample lab</h3>
+            <p>Target: training-lab.local</p>
+            <p>Operating System: Linux (simulated)</p>
+            <p>IP Address: 192.0.2.10 (documentation example)</p>
+            <p>Environment: Private training lab</p>
+        </div>
+    </section>
+
+    <section id="scan">
+        <h2>3. Vulnerability Scanning</h2>
+        <p>
+            Vulnerability scanning helps identify possible security
+            weaknesses in a system.
+        </p>
+
+        <button onclick="runScan()">Run Simulated Scan</button>
+        <div id="scanResult" class="result">
+            Scan results will appear here.
+        </div>
+    </section>
+
+    <section id="exploit">
+        <h2>4. Basic Exploitation Simulation</h2>
+        <p>
+            Exploitation means demonstrating how an identified
+            weakness could affect a system.
+        </p>
+
+        <p>
+            In this fictional example, a training application has
+            an outdated software component.
+        </p>
+
+        <button onclick="simulateExploit()">Run Safe Simulation</button>
+        <div id="exploitResult" class="result">
+            Simulation results will appear here.
+        </div>
+
+        <p class="warning">
+            This is a fictional demonstration. No real system is accessed.
+        </p>
+    </section>
+
+    <section id="recommendations">
+        <h2>5. Security Recommendations</h2>
+        <ul>
+            <li>Update outdated software.</li>
+            <li>Use strong passwords.</li>
+            <li>Disable unnecessary services.</li>
+            <li>Apply security patches regularly.</li>
+            <li>Monitor system activities.</li>
+            <li>Perform authorized security assessments.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Penetration Testing Knowledge Quiz</h2>
+        <p id="progress"></p>
+        <p id="question"></p>
+        <div id="options"></div>
+        <p id="result"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()">Next Question</button>
+        <button id="restartBtn" onclick="restartQuiz()" style="display:none;">
+            Restart Quiz
+        </button>
+    </section>
+
+    <footer>
+        <p>Penetration Testing Simulation | Cybersecurity Learning Project</p>
+        <p>Practice ethically. Test only systems you are authorized to assess.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
